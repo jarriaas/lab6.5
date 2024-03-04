@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6.5</title>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+</head>
+
+<body>
+    <div x-data="{
+
+    name: 'Click [Generate Name] to Randomize a Name',
+
+    changeNames(){
+        this.name = getName()
+    }
+
+    }">
+
+        <button @click="changeNames">Generate Name</button>
+        <h1 x-text="name"></h1>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
